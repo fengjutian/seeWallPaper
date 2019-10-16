@@ -5,8 +5,23 @@
   }
 
   .img-all-box{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
     .single-img-box{
+      transition: all .5s;
+      .single-box-head{
+        &>img{
+          width: calc((100vw - 20px)  / 3);
+          height: calc((100vh - 40px) / 3);
+        }
+      }
+    }
 
+    .single-img-box:hover{
+      cursor: pointer;
+      transform: scale(1.2);
     }
    }
 }
