@@ -9,6 +9,11 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
+    "node-sass": "^4.12.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-script": "^2.0.5",
+    "sass-loader": "^8.0.0",
     "source-map-support": "^0.5.12"
   },
   "devDependencies": {
