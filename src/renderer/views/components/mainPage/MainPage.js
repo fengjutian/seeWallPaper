@@ -86,30 +86,43 @@ class App extends React.Component {
           url: require("../../assets/i_5.jpg"),
           title: 'xxx'
         }
-      ]
+      ],
+      mainImg: {
+        url: null,
+        title: 'xxx'
+      }
     }
   }
+
+  componentDidMount() {
+
+
+    console.log('this.state', this.state)
+  }
+
   render(){
     return (
-      <div className="main-page">
-        <section className='page-refurbish'>
-          <button>刷新</button>
-        </section>
-        <section className='img-all-box'>
-          {
-            this.state.imgList.map((item, key) => {
-              return (
-                <div className='single-img-box'>
-                  <div className='single-box-head'>
-                    <img src={item.url} key={key} alt=""/>
+      <section className="main-page">
+        <section className='main-left-box'>
+          <div className='img-all-box'>
+            {
+              this.state.imgList.map((item, key) => {
+                return (
+                  <div className='single-img-box'>
+                    <div className='single-box-head'>
+                      <img src={item.url} key={key} alt=""/>
+                    </div>
+                    <div className='single-box-bottom'></div>
                   </div>
-                  <div className='single-box-bottom'></div>
-                </div>
-              )
-            })
-          }
+                )
+              })
+            }
+          </div>
         </section>
-      </div>
+        <section className='main-right-box'>
+          <img src={this.state.mainImg.url}  alt=""/>
+        </section>
+      </section>
     )
   }
 
