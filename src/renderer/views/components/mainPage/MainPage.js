@@ -100,7 +100,7 @@ class App extends React.Component {
         ...this.state.mainImg,
         url: this.state.imgList[0].url
       }
-    }, () => {console.log(this.state.mainImg) })
+    })
   }
 
   render(){
@@ -111,8 +111,9 @@ class App extends React.Component {
             {
               this.state.imgList.map((item, key) => {
                 return (
-                  <div className='single-img-box' key={key}>
-                    <div className='single-box-head' onClick={this.changeImg.bind(this, item, key)}>
+                  <div className='single-img-box' key={key}
+                    onClick={this.changeImg.bind(this, item, key)}>
+                    <div className='single-box-head' >
                       <img src={item.url}  alt=""/>
                     </div>
                     <div className='single-box-bottom'></div>
@@ -130,7 +131,7 @@ class App extends React.Component {
   }
 
   changeImg(val, key) {
-    console.log(val.url, key, this.setState)
+    console.log(val, key)
     this.setState({
       url: val.url
     }, () => {console.log(this.state.mainImg)})
