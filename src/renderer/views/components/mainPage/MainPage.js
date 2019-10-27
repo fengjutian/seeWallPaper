@@ -130,6 +130,7 @@ class App extends React.Component {
     )
   }
 
+
   changeImg(val, key) {
     console.log(val, key)
     this.setState({
