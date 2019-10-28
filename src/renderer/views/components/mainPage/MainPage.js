@@ -1,5 +1,6 @@
 import React from 'react';
 import './Mainpage.scss';
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
@@ -101,6 +102,9 @@ class App extends React.Component {
         url: this.state.imgList[0].url
       }
     })
+
+    // 获取图片的数据
+    this.getImgList()
   }
 
   render(){
@@ -128,6 +132,12 @@ class App extends React.Component {
         </section>
       </section>
     )
+  }
+
+  getImgList() {
+    axios.get('http://127.0.0.1:7001/getImgs').then(res => {
+      console.log(34, res)
+    })
   }
 
 
