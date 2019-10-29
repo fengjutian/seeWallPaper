@@ -46,6 +46,7 @@ class App extends React.Component {
   render(){
     return (
       <section className="main-page">
+        <title>seeWallPaper</title>
         <section className='main-left-box'>
           <div className='img-all-box'>
             {
@@ -72,6 +73,7 @@ class App extends React.Component {
 
   getImgList() {
     axios.get('http://127.0.0.1:7001/getImgs').then(res => {
+      
 
     })
   }
