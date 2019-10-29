@@ -91,7 +91,8 @@ class App extends React.Component {
       mainImg: {
         url: null,
         title: 'xxx'
-      }
+      },
+      mainImgUrl: ''
     }
   }
 
@@ -136,16 +137,16 @@ class App extends React.Component {
 
   getImgList() {
     axios.get('http://127.0.0.1:7001/getImgs').then(res => {
-      console.log(34, res)
+
     })
   }
 
 
   changeImg(val, key) {
-    console.log(val, key)
+    const mainImgObj = Object.assign({}, this.state.mainImg, {url: val.url, title: 'xxx' })
     this.setState({
-      url: val.url
-    }, () => {console.log(this.state.mainImg)})
+      mainImg: mainImgObj
+    }, () => {})
   }
 }
 
