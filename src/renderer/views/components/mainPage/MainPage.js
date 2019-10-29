@@ -22,77 +22,12 @@ class App extends React.Component {
         {
           url: require("../../assets/i_4.png"),
           title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_5.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_1.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_2.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_3.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_4.png"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_5.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_1.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_2.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_3.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_4.png"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_5.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_1.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_2.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_3.jpg"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_4.png"),
-          title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_5.jpg"),
-          title: 'xxx'
         }
       ],
       mainImg: {
         url: null,
         title: 'xxx'
-      },
-      mainImgUrl: ''
+      }
     }
   }
 
