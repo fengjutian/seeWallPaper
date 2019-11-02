@@ -18,10 +18,6 @@ class App extends React.Component {
         {
           url: require("../../assets/i_3.jpg"),
           title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_4.png"),
-          title: 'xxx'
         }
       ],
       mainImg: {
@@ -73,7 +69,7 @@ class App extends React.Component {
 
   getImgList() {
     axios.get('http://127.0.0.1:7001/getImgs').then(res => {
-      
+
 
     })
   }
