@@ -14,10 +14,6 @@ class App extends React.Component {
         {
           url: require("../../assets/i_2.jpg"),
           title: 'xxx'
-        },
-        {
-          url: require("../../assets/i_3.jpg"),
-          title: 'xxx'
         }
       ],
       mainImg: {
